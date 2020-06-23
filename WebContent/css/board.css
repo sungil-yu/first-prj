@@ -1,0 +1,283 @@
+/* board-main */
+#body{
+	display: flex;
+	flex-direction: column;
+}
+.board-main{
+	flex-grow: 1;
+	overflow : scroll;
+    padding: 0;
+    position: relative;
+}
+.board-main .board-info{
+    padding: 10px;
+}
+.board-main .board-info>span{
+    color: rgb(39, 6, 63);
+    font-weight: bold;
+}
+.board-main .content-box{
+    display: flex;
+    padding-left: 5px;
+}
+    .board-main .content-box .todo-list-container{
+        display: flex;
+    }
+
+    /* todo-list-box */
+.board-main .todo-list-box{
+    margin:4px;
+    background-color: #ebecf0;
+    border-radius: 3px;
+    box-sizing: border-box;
+    padding: 6px;
+    display: flex;
+    flex-direction: column;
+    max-height: 100%;
+    white-space: normal;
+    width: 272px;
+}
+    .todo-list-box>header{
+        display: flex;
+        justify-content: space-between;
+    }
+     .todo-list-box>header>h1{
+        box-sizing: border-box;
+        height: 40px;
+        font-size: 15px;
+        padding-left: 10px;
+        padding-top: 5px;
+        color: rgb(90, 80, 104);
+        font-weight: bold;
+        cursor: pointer;
+    }
+    .todo-list-box>header>input{
+        width: 222px;
+        height: 30px;
+        box-sizing: border-box;
+        margin-left: 3px;
+        margin-bottom: 10px;
+        border: 3px #30cc83 solid;
+        border-radius: 5px;
+        padding: 4px;
+        font-size: 15px;
+        font-weight: bold;
+    }
+    .todo-list-box>header>button{
+        width: 32px;
+        height: 32px;
+        border: 0;
+        border-radius: 3px;
+        transition: 0.2s;
+        background: url(../images/list-hide-menu.png) no-repeat center;
+        text-indent: -9999px;
+        cursor: pointer;
+    }
+    .todo-list-box>header>button:hover{
+        background: #dddddd url(../images/list-hide-menu.png) no-repeat center;
+    }
+
+    .board-main .todo-list-box .add-card-button{
+        box-sizing: border-box;
+        width: 260px;
+        height: 30px;
+        padding: 4px;
+        border-radius: 3px;
+
+        transition : 0.2s;
+        cursor: default;
+        color: grey;
+        font-size: 15px;
+    }
+    .board-main .todo-list-box .add-card-button:hover{
+		background: #dddddd;
+        cursor: pointer;
+    }
+
+    .card-content-input{
+        border: 0;
+        box-shadow: 1px 1px 2px #cccccc;
+        border-radius: 3px;
+        padding: 4px 10px;
+        box-sizing: border-box;
+        font-size: 14px;
+        width: 255px;
+        height: 35px;
+        margin-left: 3px;
+        margin-bottom: 5px;
+    }
+    .reg-card-button{
+        border: 0;
+        border-radius: 3px;
+        color: white;
+        font-size: 14px;
+        padding: 5px 10px;
+        background: #0fac63;
+        transition: 0.3s;
+        margin-right: 5px;
+        margin-left: 1px;
+    }
+    .reg-card-button:hover{
+        background: #15ce78;
+        cursor: pointer;
+    }
+    .cancle-card-button{
+        cursor: pointer;
+    }
+    .card-box{
+        display: flex;
+        position:static;
+        justify-content: space-between;
+
+        box-sizing: border-box;
+        width: 255px;
+        min-height: 32px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 8px;
+        border-radius: 3px;
+        box-shadow: 1px 1px 2px #cccccc;
+        background: #ffffff;
+        word-wrap: break-word;
+        padding: 5px 10px;
+        color: #112444;
+        transition: background-color 0.2s;
+        cursor: pointer;
+        font-size : 15px
+    }
+    .card-box:hover{
+        background: #f5f5f5;
+    }
+    .card-box>button{
+        width: 24px;
+        height: 24px;
+        border-radius: 3px;
+        margin-top: auto;
+        margin-bottom: auto;
+        background: #f5f5f5 url("../images/card-edit.png") no-repeat center;
+        transition: 0.2s;
+        text-indent: -9999px;
+    }
+    .card-box>button:hover{
+        background: #dddddd url("../images/card-edit.png") no-repeat center;
+    }
+    .card-box>input{
+    	width : 16px;
+    	height : 16px;
+    	margin-top: auto;
+    	margin-bottom:auto;
+    }
+
+    /* list add */
+.list-add-form{
+    background: rgb(168, 230, 111);
+    box-sizing: border-box;
+    padding: 6px;
+    margin : 4px;
+    width: 272px;
+    border-radius: 3px;
+    transition: 0.2s;
+}  
+.list-add-form:hover{
+    background: rgb(157, 218, 100);
+}
+    .add-list-button{
+        min-width: 272px;
+        color: white;
+        cursor: pointer;
+    }
+    .list-title-input{
+        border: 2px solid #30cc83;
+        border-radius: 3px;
+        padding: 4px;
+        box-sizing: border-box;
+        font-size: 14px;
+        width: 260px;
+        height: 35px;
+        margin-top: 3px;
+        margin-bottom: 5px;
+    }
+    .reg-list-button{
+        border: 0;
+        border-radius: 3px;
+        color: white;
+        font-size: 14px;
+        padding: 5px 10px;
+        background: #30cc83;
+        transition: 0.3s;
+        margin-right: 5px;
+        margin-left: 1px;
+    }
+    .reg-list-button:hover{
+        background: #40dc93;
+        cursor: pointer;
+
+    }
+    .cancle-add-button{
+        cursor: pointer;
+    }
+
+    .hidden-popup{
+        position: absolute;
+        left: 250px;
+        top: 80px;
+        width: 300px;
+        height: 100px;
+        background: white;
+        border-radius: 5px;
+        z-index: 1;
+        box-shadow: 1px 1px 10px #b4b4b4;
+    }   
+    .hidden-popup .hidden-popup-close{
+        position: absolute;
+        top: 8px;
+        right: 10px;
+        font-size: 17px;
+        color: #888888;
+        cursor: pointer;
+        transition: 0.2s;
+    }
+    .hidden-header{
+        padding-top: 10px;
+        padding-bottom: 10px;
+        text-align: center;
+        border-bottom: #eeeeee 1px solid;
+        
+    }
+    .hidden-header>h1{
+        color: #393846;
+        font-size: 15px;
+
+    } 
+    .hidden-popup .hidden-popup-close:hover{
+        color: #444444;
+    }
+	.hidden-popup .popup-content{
+        margin-top: 5px;
+    }
+    .hidden-popup .list-del-button{
+        box-sizing: border-box;
+        font-size: 15px;
+        height: 35px;
+        padding: 7px 10px;
+        color: #393846;
+        transition: 0.2s;
+        cursor: pointer;
+    }
+    .hidden-popup .list-del-button:hover{
+        background: #eeeeee;
+    }
+    
+.trash-space{
+	position : absolute;
+	width: 100%;
+	height: 180px;
+	bottom: 0px;
+	
+	text-indent : -9999px;
+	background: #eeeeee url("../images/trash-icon.png") no-repeat center;
+	transition : 0.2s;
+}
+.trash-space:hover{
+	background: #dddddd url("../images/trash-icon.png") no-repeat center;
+}

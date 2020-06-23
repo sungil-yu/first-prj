@@ -1,0 +1,236 @@
+.card-detail {
+    padding: 20px;
+    position: absolute;
+    top: 50px; left: 50%;
+    transform: translateX(-50%);
+    width: 800px;
+    min-height: 500px;
+    border: 1px solid #666;
+    background-color: #fff;
+    box-sizing: border-box;
+}
+
+.detail-menu-container .menu-button {
+    position: absolute;
+    top: 20px; right: 20px;
+    width: 25px; height: 25px;
+    cursor: pointer;
+    background-image: url('../images/menu-icon.png');
+    background-size: 25px;
+    background-position: center;
+    text-indent: -999px;
+    overflow: hidden;
+}
+.detail-menu-container .detail-menu {
+    padding: 20px;
+    position: absolute;
+    top: 0; right: 0;
+    width: 250px;
+    height: 100%;
+    background-color: #f2f2f2;
+    box-sizing: border-box;
+}
+.detail-menu-container .detail-menu>section {
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: space-between;
+    height: 50px;
+}
+.detail-menu-container .detail-menu>section h1 {
+   height: inherit;
+    font-size: 20px;
+    font-weight: bold;
+    line-height: 50px;
+}
+.detail-menu-container .detail-menu>section span {
+   height: inherit;
+    justify-self: center;
+}
+.detail-menu-container .detail-menu div {
+    margin-bottom: 20px;
+    text-indent: 27px;
+    background-position: left center;
+    background-repeat: no-repeat;
+    background-size: 20px;
+    cursor: pointer;
+}
+.detail-menu-container .detail-menu div:hover {
+    font-weight: bold;
+}
+.detail-menu-container .detail-menu .add-des {
+    background-image: url('../images/desc-icon.png');
+}
+.detail-menu-container .detail-menu .add-comment {
+    background-image: url('../images/comment-icon.png');
+}
+
+.exit {
+    margin: 30px auto 10px;
+    width: 100%;
+    height: 40px;
+}
+.exit a {
+    display: block;
+    width: 100%;
+    height: inherit;
+    line-height: 40px;
+    text-align: center;
+    background-color: #f2f2f2;    
+}
+.exit a:hover {
+    background-color: #ddd;
+}
+.view .name-container,
+.view .name-container-hidden {
+    margin-bottom: 30px;
+   width: 100%;
+    height: 80px;
+}
+
+.view .name-container .name {
+    font-size: 25px;
+    font-weight: bold;
+    cursor: pointer;
+    display: inline-block;
+}
+.name-container-hidden h1 {
+    margin-bottom: 10px;
+    font-size: 17px;
+    font-weight: bold;
+}
+.name-container-hidden form {
+    display: flex;
+}
+.name-container-hidden input {
+    padding: 5px;
+    width: 350px;
+    border: 1px solid #666;
+}
+.name-container-hidden div {
+    align-self: center;
+    margin-left: 15px;
+    width: 70px;
+    height: 35px;
+    color: #666;
+    text-align: center;
+    line-height: 35px;
+    background-color: #f2f2f2;
+    border: 1px solid #ddd;
+    border-radius: 7px;
+    cursor: pointer;
+}
+.name-container-hidden div:hover {
+   font-weight: bold;
+}
+
+.detail-h1 {
+    margin-bottom: 10px;
+    font-weight: bold;
+    font-size: 18px;
+    background-position: left center;
+    background-repeat: no-repeat;
+    background-size: 20px;
+    text-indent: 27px;
+}
+.detail-h1.des-h1 {
+    background-image: url('../images/desc-icon.png');
+}
+.detail-h1.comment-h1 {
+    background-image: url('../images/comment-icon.png');
+}
+.des-container,
+.des-container-hidden {
+   margin-bottom: 30px;
+}
+.des-container .des,
+.des-container-hidden .des {
+    min-height: 50px;
+}
+.des-container-hidden h1 {
+    margin-bottom: 10px;
+    font-size: 17px;
+    font-weight: bold;
+}
+.des-container-hidden form {
+    display: flex;
+}
+.des-container-hidden input {
+    padding: 5px;
+    width: 350px;
+    border: 1px solid #666;
+}
+.des-container-hidden div {
+    align-self: center;
+    margin-left: 15px;
+    width: 70px;
+    height: 35px;
+    color: #666;
+    text-align: center;
+    line-height: 35px;
+    background-color: #f2f2f2;
+    border: 1px solid #ddd;
+    border-radius: 7px;
+    cursor: pointer;
+}
+
+.comment-wrapper {
+    padding: 15px;
+    margin-bottom: 10px;
+    width: 100%;
+    min-height: 100px;
+    border: 1px solid #666;
+    box-sizing: border-box;
+}
+.comment-body .comment-writter-list {
+    display: flex;
+}
+.comment-body .comment-writter-list .comment-writer {
+    margin-right: 15px;
+    font-weight: bold;
+}
+.comment-content {
+    margin: 10px 0;
+}
+.btn-comment-container {
+    display: flex;
+    justify-content: flex-end;
+}
+.btn-comment-container div {
+    color: #666;
+    cursor: pointer;
+}
+.btn-comment-container div:hover {
+   color: red;
+}
+.btn-comment-container .btn-del-comment {
+    margin-left: 15px;
+}
+.comment-add-container {
+	margin: 20px 0;
+}
+.comment-add-container h1 {
+    margin-bottom: 10px;
+    font-size: 17px;
+    font-weight: bold;
+}
+.comment-add-container form {
+    display: flex;
+}
+.comment-add-container input {
+    padding: 5px;
+    width: 350px;
+    border: 1px solid #666;
+}
+.comment-add-container div {
+    align-self: center;
+    margin-left: 15px;
+    width: 70px;
+    height: 35px;
+    color: #666;
+    text-align: center;
+    line-height: 35px;
+    background-color: #f2f2f2;
+    border: 1px solid #ddd;
+    border-radius: 7px;
+    cursor: pointer;
+}

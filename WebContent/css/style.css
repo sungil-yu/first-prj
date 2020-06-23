@@ -1,0 +1,23 @@
+@import url(layout.css);
+@import url(component.css);
+@import url(membership.css);
+@import url(profile.css);
+@import url(board.css);
+@import url(team.css);
+@import url(detail.css);
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap');
+@font-face { 
+	font-family: 'DWImpactamin';
+	src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-04@1.0/DWImpactamin.woff') format('woff');
+	font-weight: normal;
+	font-style: normal;
+}
+
+html, body {
+    height: 100%;
+    background-color: #f7fbfe;
+    font-family: 'Noto Sans KR', sans-serif;
+}
+.d-none {
+    display: none;
+}

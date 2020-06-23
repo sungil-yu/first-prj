@@ -1,0 +1,263 @@
+/*team-detail 공통*/
+.team-profile-section {
+    height: 300px;
+}
+.team-profile {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 70px; left: 50%;
+    transform: translateX(-50%);
+    width: 450px;
+    height: 200px;
+}
+.team-profile img {
+    width: 100%;
+}
+.profile-info {
+    padding: 20px;
+    text-align: center;
+    box-sizing: border-box;
+}
+.profile-info .profile-name {
+    height: 37px;
+}
+.profile-info .profile-name b {
+	margin-right: 10px;
+	font-size: 25px;
+}
+.team-menus-wrap {
+	width: 100%;
+	height: 70px;
+    box-shadow: 1px 5px 14px #ddd;
+}
+.team-menus {
+    display: flex;
+    margin: 0 auto;
+    width: 1100px;
+    height: inherit;
+}
+.team-menus li {
+    width: 33.33%;
+    font-size: 23px;
+    text-align: center;
+    line-height: 70px;
+}
+.team-menus li:hover {
+    font-weight: bold;
+}
+.team-detail-main {
+    padding: 50px 20px;
+    box-sizing: border-box;
+}
+.team-main-wrap {
+    margin: 0 auto;
+    width: 1100px;
+}
+
+
+/*멤버*/
+.temp-invitation {
+	margin-bottom: 30px;
+    height: 50px;
+}
+.temp-invitation input[type="text"] {
+    margin-right: 15px;
+	padding: 5px 10px;
+    width: 300px;
+    height: 30px;
+    border: 1px solid #ddd;
+}
+.temp-invitation input[type="submit"] {
+	width: 70px;
+	height: 40px;
+	color: #666;
+	background-color: #f2f2f2;
+	border: 1px solid #ddd;
+	border-radius: 7px;
+}
+.member .invite-list {
+    display: flex;
+    margin-top: 50px;
+}
+.member .invite-list button {
+    flex-grow: 1;
+    padding: 6px 0;
+    line-height: 27px;
+    text-align: center;
+    border: 1px solid #ddd;
+    border-right: 0px;
+	border-bottom: 0;
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+    background-color: #f2f2f2;
+    cursor: pointer;
+}
+.invite-item {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 25px;
+	box-sizing: border-box;
+	border: 1px solid #ddd;
+}
+.invited-user {
+    display: flex;
+    margin: 0 20px 20px 0;
+    padding: 5px 10px;
+    width: 335px;
+    min-height: 95px;
+    box-sizing: border-box;
+    border: 1px solid #ddd;
+    background-color: #fff;
+}
+.invited-user:nth-child(3n) {
+    margin-right: 0;
+}
+
+.invited-user.inviting,
+.invited-user.invitation {
+    min-height: 120px;
+}
+
+.invited-user.invitation>span {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+.invited-user.invitation .invitation-btn {
+    margin-top: 9px;
+    display: flex;
+    justify-content: flex-end;
+}
+.invitation-btn button {
+    margin-right: 7px;
+    color: #666;
+    text-decoration: underline;
+    background-color: #fff;
+    cursor: pointer;
+}
+.invitation-btn button:hover {
+    color: red;
+}
+
+.invited-user .invited-image {
+	padding-top: 10px;
+	box-sizing: border-box;
+	margin-right: 15px;
+    display: inline-block;
+	width: 60px;
+    height: 85px;
+    text-align: center;
+    vertical-align: middle;
+}
+.invited-user.inviting .invited-image {
+    height: 110px;
+}
+.invited-user .invited-image img {
+    width: 90%;
+}
+.invited-user .invited-member {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+
+.remove-member, .cancel-btn {
+    margin-top: 8px;
+    align-self: flex-end;
+    color: #666;
+    text-decoration: underline;
+    background-color: #fff;
+    cursor: pointer;
+}
+.remove-member:hover, .cancel-btn:hover {
+    color: red;
+}
+.invited-date {
+    color: #666;
+    font-size: 14px;
+}
+
+/*팀 메뉴*/
+.teams-list {
+    display: flex;
+    flex-wrap: wrap;
+}
+.team-detail-team {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 10px;
+    margin: 0 25px 20px 0;
+    width: 255px;
+    height: 80px;
+    border: 1px solid #666;
+    box-sizing: border-box;
+    background-color: #fff;
+}
+.team-detail-team:nth-child(4n) {
+    margin-right: 0;
+}
+.team-detail-team .btn-wrap {
+    margin-top: 8px;
+    display: flex;
+    justify-content: flex-end;
+}
+.team-detail-team .btn-wrap button {
+    align-self: flex-end;
+    color: #666;
+    text-decoration: underline;
+    background-color: #fff;
+    cursor: pointer;
+    
+}
+.team-detail-team .btn-wrap button:hover {
+	color: red;
+}
+.team-detail-team .btn-wrap .out-team {
+    margin-left: 10px;
+}
+
+/*보드메뉴*/
+.boards-list {
+    display: flex;
+    flex-wrap: wrap;
+}
+.team-detail-board {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 10px;
+    margin: 0 25px 20px 0;
+    width: 255px;
+    height: 80px;
+    border: 1px solid #666;
+    box-sizing: border-box;
+    background-color: #fff;
+}
+.team-detail-board:nth-child(4n) {
+    margin-right: 0;
+}
+.team-detail-list {
+    display: flex;
+    padding: 10px;
+    position: absolute;
+    width: 322px;
+    height: 100px;
+    box-sizing: border-box;
+    border: 1px solid #ddd;
+    background-color: #fff;
+}
+.team-detail-list img {
+    margin-right: 20px;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+}
+.team-detail-list>span {
+    align-self: center;
+}
+
+.member .invite-list .team-invite.active {
+    background-color: #a4e3d7;
+}

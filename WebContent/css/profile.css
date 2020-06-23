@@ -1,0 +1,78 @@
+.profile-setting {
+    padding: 10px;
+    position: absolute;
+    top: 100px; left: 50%;
+    transform: translateX(-50%);
+    width: 400px; height: 480px;
+    border: 1px solid #ddd;
+    background-color: #fff;
+    box-sizing: border-box;
+    z-index: 1;
+}
+.profile-setting>h1 {
+    font-size: 17px;
+}
+.profile-setting form {
+    width: 100%;
+    height: 250px;
+    text-align: center;
+}
+.profile-img-input {
+	margin: 30px auto;
+	width: 250px;
+    height: 250px;
+    overflow: hidden;
+    background-image: url(../images/picture-icon.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 180px;
+    border: 1px solid #ddd;
+    border-radius: 50%;
+    cursor: pointer;   
+}
+.profile-submit img {
+    width: 100%;
+    height: 100%;
+}
+.profile-submit {
+	margin: 0 auto;
+    width: 340px;
+    height: 40px;
+    border: 1px solid #ddd;
+    cursor: pointer;
+}
+
+/*
+.profile-setting{
+    position: absolute;
+    right: 0px;
+	background-color: white;
+    z-index: 1;
+}
+
+.profile-setting > form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    z-index: 1;
+}
+
+.profile-setting input{
+	margin : 10px;
+	width : 100%;
+}
+
+.profile-img-input{
+    width: 250px;
+    height: 250px;
+    border-radius: 100px;
+    overflow: hidden;
+    background: url(../profile-img/defalut.png) no-repeat;
+    background-size: contain;
+    background-position: center;
+    cursor: pointer;    
+}
+
+
+*/
